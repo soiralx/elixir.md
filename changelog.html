@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Changelog: elixir</title>
+    <meta
+      name="description"
+      content="elixir is a free, quiet notes app for research. Plain Markdown files on your computer, with optional Google Drive sync. Available for Windows."
+    />
+    <meta property="og:title" content="elixir: a home for your thinking" />
+    <meta name="theme-color" content="#07060d" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="wrap">
+        <div class="bar glass">
+          <a class="brand" href="index.html" aria-label="elixir home"
+            ><svg
+              viewBox="0 0 8 8"
+              shape-rendering="crispEdges"
+              fill="currentColor"
+            >
+              <rect x="4" y="0" width="3" height="2" />
+              <rect x="2" y="2" width="5" height="2" />
+              <rect x="0" y="4" width="7" height="3" />
+            </svg>
+            elixir</a
+          >
+          <div class="links" id="menu">
+            <a href="index.html#features">Features</a
+            ><a href="index.html#sync">Sync</a><a href="index.html#free">Free</a
+            ><a href="changelog.html" aria-current="page">Changelog</a
+            ><a href="#" style="display: flex; align-items: center; gap: 10px;"><span
+                class="ic"
+                style="
+                  --i: url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/github.svg);
+                "
+              ></span> GitHub</a
+            ><a class="btn sm" href="download.html">Download</a>
+          </div>
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="wrap head1">
+        <h1>Changelog.</h1>
+        <p class="lede">What changed in each version.</p>
+      </div>
+      <div class="wrap" style="padding-bottom: var(--gap)">
+        <div class="ver rv">
+          <div>
+            <h3>0.1.0</h3>
+            <span class="mono">Beta, Windows</span>
+          </div>
+          <ul>
+            <li>First public beta for Windows. Free.</li>
+            <li>Notes saved as Markdown files in a folder you choose.</li>
+            <li>Search, properties, tags, and note links.</li>
+            <li>Writing and Reading modes with light and dark themes.</li>
+            <li>Optional Google Drive sync.</li>
+            <li>Export to PDF, HTML, and Markdown.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="fgrid">
+          <div>
+            <a class="brand" href="index.html"
+              ><svg
+                viewBox="0 0 8 8"
+                shape-rendering="crispEdges"
+                fill="currentColor"
+              >
+                <rect x="4" y="0" width="3" height="2" />
+                <rect x="2" y="2" width="5" height="2" />
+                <rect x="0" y="4" width="7" height="3" />
+              </svg>
+              elixir</a
+            >
+            <p style="margin-top: 12px; max-width: 20em">
+              Markdown in. Markdown out. Always yours.
+            </p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="index.html#features">Features</a
+            ><a href="index.html#sync">Google Drive sync</a
+            ><a href="download.html">Download</a
+            ><a href="changelog.html">Changelog</a>
+          </div>
+          <div>
+            <h4>Platforms</h4>
+            <a href="download.html">Windows</a
+            ><span style="display: block; padding: 4px 0; opacity: 0.6"
+              >Mac, coming soon</span
+            >
+          </div>
+          <div>
+            <h4>Community</h4>
+            <a href="#">GitHub</a><a href="#">Feedback</a>
+          </div>
+        </div>
+        <div class="fbot">
+          <span>elixir. Free for everyone.</span
+          ><span class="mono">Beta 0.1.0</span>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

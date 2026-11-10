@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>elixir: a home for your thinking</title>
+    <meta
+      name="description"
+      content="elixir is a free, quiet notes app for research. Plain Markdown files on your computer, with optional Google Drive sync. Available for Windows."
+    />
+    <meta property="og:title" content="elixir: a home for your thinking" />
+    <meta name="theme-color" content="#07060d" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="wrap">
+        <div class="bar glass">
+          <a class="brand" href="index.html" aria-label="elixir home"
+            ><svg
+              viewBox="0 0 8 8"
+              shape-rendering="crispEdges"
+              fill="currentColor"
+            >
+              <rect x="4" y="0" width="3" height="2" />
+              <rect x="2" y="2" width="5" height="2" />
+              <rect x="0" y="4" width="7" height="3" />
+            </svg>
+            elixir</a
+          >
+          <div class="links" id="menu">
+            <a href="index.html#features">Features</a
+            ><a href="index.html#sync">Sync</a><a href="index.html#free">Free</a
+            ><a href="changelog.html">Changelog</a
+            ><a href="#" style="display: flex; align-items: center; gap: 10px;"><span
+                class="ic"
+                style="
+                  --i: url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/github.svg);
+                "
+              ></span> GitHub</a
+            ><a class="btn sm" href="download.html">Download</a>
+          </div>
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <a class="tag glass" href="download.html"
+            >Free for Windows. Mac is coming soon.</a
+          >
+          <h1>Think better<br />with elixir.</h1>
+          <p class="lede">
+            A quiet notes app for research. Your notes are plain Markdown files
+            on your computer, and it’s completely free.
+          </p>
+          <div class="cta">
+            <a class="btn" href="download.html"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="currentColor"
+              >
+                <path
+                  d="M0 2.6 7.4 1.6v7H0zM8.4 1.5 18 0v8.6H8.4zM0 9.4h7.4v7L0 15.4zM8.4 9.4H18V18l-9.6-1.4z"
+                />
+              </svg>
+              Download for Windows</a
+            ><a class="btn alt" href="#features">See what’s inside</a>
+          </div>
+          <p class="mono small">
+            Beta 0.1.0. No account needed. Works offline.
+          </p>
+          <div class="stage">
+            <div class="orb" aria-hidden="true"></div>
+            <div class="shot glass rv">
+              <img
+                src="assets/write-dark.webp"
+                width="1800"
+                height="1125"
+                alt="The elixir app showing a note called How we remember, with a folder list on the left"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="features">
+        <div class="wrap">
+          <div class="head center rv">
+            <h2>Everything you need.<br />Nothing you don’t.</h2>
+            <p class="lede">
+              Built for reading, collecting, and writing. Calm on the surface,
+              capable underneath.
+            </p>
+          </div>
+          <div class="grid4 rv">
+            <div class="cell glass">
+              <span class="n mono">01</span>
+              <h3>Your folder, your files</h3>
+              <p>Every note is a Markdown file you can open anywhere.</p>
+            </div>
+            <div class="cell glass">
+              <span class="n mono">02</span>
+              <h3>Instant search</h3>
+              <p>Search titles, text, and properties with Ctrl K.</p>
+            </div>
+            <div class="cell glass">
+              <span class="n mono">03</span>
+              <h3>Research properties</h3>
+              <p>Add status, source, author, date, and #tags.</p>
+            </div>
+            <div class="cell glass">
+              <span class="n mono">04</span>
+              <h3>Linked notes</h3>
+              <p>Type [[ to connect ideas and see backlinks.</p>
+            </div>
+            <div class="cell glass">
+              <span class="n mono">05</span>
+              <h3>Writing and Reading</h3>
+              <p>Switch modes with one key. Reading is distraction free.</p>
+            </div>
+            <div class="cell glass">
+              <span class="n mono">06</span>
+              <h3>Preview as a page</h3>
+              <p>See a note as a document or blog post, then export.</p>
+            </div>
+            <div class="cell glass">
+              <span class="n mono">07</span>
+              <h3>Light and dark</h3>
+              <p>Follows your system, or pick the one you like.</p>
+            </div>
+            <div class="cell glass">
+              <span class="n mono">08</span>
+              <h3>Works offline</h3>
+              <p>No account. No upload. It opens fast on any laptop.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="glow" style="top: 10%"></div>
+        <div class="wrap">
+          <div class="head center rv">
+            <span class="tag glass">Search</span>
+            <h2>Find a thought<br />in seconds.</h2>
+            <p class="lede">
+              Search the titles and the words inside every note. Results show
+              the folder and the line that matched.
+            </p>
+          </div>
+          <div class="shot glass sm rv">
+            <img
+              loading="lazy"
+              src="assets/find.webp"
+              width="1800"
+              height="1125"
+              alt="The search page showing three notes that match the word memory"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="wrap split">
+          <div class="rv">
+            <span class="tag glass">Reading mode</span>
+            <h2>Write. Then just read.</h2>
+            <p>
+              One key turns your note into a clean page with larger type and no
+              editing controls. It looks as good in light as it does in dark.
+            </p>
+            <ul class="checks">
+              <li>Writing and Reading with Ctrl E</li>
+              <li>Preview as a document or blog post</li>
+              <li>Export to PDF, HTML, or Markdown</li>
+            </ul>
+          </div>
+          <div class="shot glass rv">
+            <img
+              loading="lazy"
+              src="assets/read-light.webp"
+              width="1800"
+              height="1125"
+              alt="A note in Reading mode with the light theme"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="sync">
+        <div class="glow" style="top: 0"></div>
+        <div class="wrap">
+          <div class="head center rv">
+            <span class="tag glass">Google Drive</span>
+            <h2>Sync online with<br />Google Drive.</h2>
+            <p class="lede">
+              Notes stay as files on your computer. Connect Google Drive and
+              elixir keeps a copy online, so you can back up and pick up on
+              another device.
+            </p>
+          </div>
+          <div class="glass sync rv">
+            <div class="node glass">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="currentColor"
+              >
+                <path
+                  d="M0 2.6 7.4 1.6v7H0zM8.4 1.5 18 0v8.6H8.4zM0 9.4h7.4v7L0 15.4zM8.4 9.4H18V18l-9.6-1.4z"
+                />
+              </svg>
+              elixir on Windows
+            </div>
+            <div class="wire"></div>
+            <div class="node glass">
+              <span
+                class="ic"
+                style="
+                  --i: url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/googledrive.svg);
+                "
+              ></span
+              >Google Drive
+            </div>
+          </div>
+          <p class="mono center rv" style="margin-top: 18px">
+            Optional. Skip it and everything stays on your device.
+          </p>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="wrap split">
+          <!-- <div class="shot glass rv">
+            <img
+              loading="lazy"
+              src="assets/welcome.webp"
+              width="1800"
+              height="1125"
+              alt="The elixir welcome screen: A home for your thinking, with an Open a folder button"
+            />
+          </div> -->
+          <div class="rv">
+            <span class="tag glass">Get started</span>
+            <h2>Open a folder.<br />Start a note.</h2>
+            <p>
+              Choose a folder you already use, or create a new one. There’s
+              nothing to sign up for and nothing to set up.
+            </p>
+            <ul class="checks">
+              <li>No account, no upload</li>
+              <li>Works with your existing Markdown notes</li>
+              <li>Your files stay yours</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="free">
+        <div class="glow" style="top: 0"></div>
+        <div class="wrap">
+          <div class="free glass rv">
+            <span class="tag glass">Pricing</span>
+            <div class="big">Free.</div>
+            <p class="lede" style="margin-top: 14px">
+              No plans. No limits. No trial.
+            </p>
+            <ul class="checks">
+              <li>Unlimited notes</li>
+              <li>Google Drive sync</li>
+              <li>Reading and preview</li>
+              <li>Export to PDF and HTML</li>
+              <li>Light and dark themes</li>
+              <li>Works offline</li>
+            </ul>
+            <a class="btn" href="download.html"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="currentColor"
+              >
+                <path
+                  d="M0 2.6 7.4 1.6v7H0zM8.4 1.5 18 0v8.6H8.4zM0 9.4h7.4v7L0 15.4zM8.4 9.4H18V18l-9.6-1.4z"
+                />
+              </svg>
+              Download for Windows</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="sec">
+        <div class="wrap faq">
+          <div class="head center rv"><h2>Questions</h2></div>
+          <div class="rv">
+            <details>
+              <summary>Is elixir really free?</summary>
+              <p>Yes. The app and Google Drive sync are free to use.</p>
+            </details>
+            <details>
+              <summary>Is it available on Mac?</summary>
+              <p>
+                Not yet. elixir is available for Windows today, and a Mac
+                version is planned.
+              </p>
+            </details>
+            <details>
+              <summary>Where are my notes stored?</summary>
+              <p>
+                In a folder on your computer that you choose. Turn on Google
+                Drive sync if you also want an online copy.
+              </p>
+            </details>
+            <details>
+              <summary>Can I use my existing Markdown notes?</summary>
+              <p>
+                Yes. Open the folder that holds them and elixir reads them as
+                they are.
+              </p>
+            </details>
+        
+          </div>
+        </div>
+      </section>
+
+      <section class="final">
+        <div class="orb" aria-hidden="true"></div>
+        <div class="wrap">
+          <h2 class="rv">Think better with elixir.</h2>
+          <p class="lede rv">Free for Windows. Mac is coming soon.</p>
+          <div class="cta rv">
+            <a class="btn" href="download.html"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="currentColor"
+              >
+                <path
+                  d="M0 2.6 7.4 1.6v7H0zM8.4 1.5 18 0v8.6H8.4zM0 9.4h7.4v7L0 15.4zM8.4 9.4H18V18l-9.6-1.4z"
+                />
+              </svg>
+              Download for Windows</a
+            ><a class="btn alt" href="#"
+              ><span
+                class="ic"
+                style="
+                  --i: url(https://cdn.jsdelivr.net/npm/simple-icons@11.14.0/icons/github.svg);
+                "
+              ></span
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="fgrid">
+          <div>
+            <a class="brand" href="index.html"
+              ><svg
+                viewBox="0 0 8 8"
+                shape-rendering="crispEdges"
+                fill="currentColor"
+              >
+                <rect x="4" y="0" width="3" height="2" />
+                <rect x="2" y="2" width="5" height="2" />
+                <rect x="0" y="4" width="7" height="3" />
+              </svg>
+              elixir</a
+            >
+            <p style="margin-top: 12px; max-width: 20em">
+              Markdown in. Markdown out. Always yours.
+            </p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <a href="index.html#features">Features</a
+            ><a href="index.html#sync">Google Drive sync</a
+            ><a href="download.html">Download</a
+            ><a href="changelog.html">Changelog</a>
+          </div>
+          <div>
+            <h4>Platforms</h4>
+            <a href="download.html">Windows</a
+            ><span style="display: block; padding: 4px 0; opacity: 0.6"
+              >Mac, coming soon</span
+            >
+          </div>
+          <div>
+            <h4>Community</h4>
+            <a href="#">GitHub</a><a data-issues href="#">Feedback</a>
+          </div>
+        </div>
+        <div class="fbot">
+          <span>elixir. Free for everyone.</span
+          ><span class="mono">Beta 0.1.0</span>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
